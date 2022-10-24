@@ -2,7 +2,7 @@
 
 Please fork this project into your personal account and commit your changes on the fork. Give us the URL of your fork, so we can review your work. Thank you!
 
-Please consider the hints at the end of this document.
+Please consider the hints at the end of this document. This task is not about implementing a performant fibonacci algorithm, it is about productive and structured coding.
 
 ## Mission #1
 
