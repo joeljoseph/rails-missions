@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container-fluid mt-5">
-      <form action="/api/fibonacci" method="post">
+      <form action="/api/fibonaccis" method="post">
         <div class="card">
           <div class="card-header">
             <h3>Promptus Rails Missions</h3>
@@ -20,14 +20,14 @@
           <div class="card-body">
             <div class="form-group">
               <label for="n">Value</label>
-              <input type="number" class="form-control" id="n" aria-describedby="valueHelp" placeholder="Enter number">
+              <input type="number" class="form-control" id="n" name="n" aria-describedby="valueHelp" placeholder="Enter number">
               <small id="valueHelp" class="form-text text-muted">Generate the n-th fibonacci number.</small>
             </div>
           </div>
           <div class="card-footer">
             <div class="row">
               <div class="col-auto mr-auto">
-                <a class="btn btn-outline-primary" href="/api/fibonacci" role="button">View last 10 results</a>
+                <a class="btn btn-outline-primary" href="/api/fibonaccis.json" role="button">View last 10 results</a>
               </div>
               <div class="col-auto ml-auto">
                 <button class="btn btn-outline-primary">Create result</button>
