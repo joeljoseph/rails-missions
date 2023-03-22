@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  namespace :api do 
+    resources 'fibonaccis', controller: 'fibonaccis', only: [:index, :create], defaults: { format: 'json' }
+  end
+
 end
