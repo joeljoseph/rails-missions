@@ -1,5 +1,3 @@
-class Computation < ApplicationRecord
-
-  
-  
+class Computation < ApplicationRecord 
+	
 end

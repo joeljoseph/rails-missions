@@ -14,7 +14,7 @@ class Api::FibonaccisController < ApplicationController
     start = Time.now
     result = fibonacci(fibonacci_params)
     finish = Time.now
-    runtime = fibinacci_runtime(start, finish) 
+    runtime = fibinacci_runtime(start, finish)
     computation = Computation.new( value: fibonacci_params, result: result, runtime: runtime )
     if computation.save
       render json: { value: fibonacci_params, result: result, runtime: runtime }
@@ -38,6 +38,5 @@ class Api::FibonaccisController < ApplicationController
   def fibonacci_params
   	params.require(:n).to_i
   end
-
 
 end
