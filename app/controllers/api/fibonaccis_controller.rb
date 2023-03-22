@@ -5,6 +5,8 @@ class Api::FibonaccisController < ApplicationController
   end
 
   def index
+    last_10 = Computation.order('created_at DESC').select(:value, :result, :runtime, :created_at).last(10)
+    render json: last_10.as_json(:except => :id)
   end
 
 
